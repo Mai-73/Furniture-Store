@@ -7,7 +7,8 @@
 header {
     width: 100%;
     height: 90px;
-    background-color: rgb(120, 120, 120);
+    background-color: rgba(43, 43, 43, 0.9);
+
 
 }
 
@@ -276,7 +277,7 @@ height: 250px;
 
 
 .sec4 {
-    background-color: blue;
+    /* background-color: blue; */
     height: 100vh;
 }
 
@@ -288,12 +289,12 @@ height: 250px;
     /* display: flex; */
     overflow: auto;
     margin: auto;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .sec4_ovelay1 {
     min-height: 330px;
-    background-color: rgb(11, 236, 11);
+    /* background-color: rgb(11, 236, 11); */
     display: flex;
     /* flex-direction: row;
     flex-wrap: wrap; */
@@ -303,11 +304,11 @@ height: 250px;
 }
 
 .sec4_ovelay2 {
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 .sec4_prag {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width: 48%;
     min-height: 300px;
     padding-left: 50px;
@@ -321,7 +322,7 @@ height: 250px;
     left: 15px;
     top: 18px;
     font-size: 28px;
-    color: brown;
+    color: #fcc803;
 
 }
 
