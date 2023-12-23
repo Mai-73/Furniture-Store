@@ -9,7 +9,6 @@ header {
     height: 90px;
     background-color: rgba(43, 43, 43, 0.9);
 
-
 }
 
 .header-container {
@@ -18,41 +17,40 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-   
+
 }
 
 .logo {
     width: 15%;
-   
+
 }
 
-.logo img{
+.logo img {
     height: 90px;
     width: 150px;
 }
 
 nav {
     width: 52%;
-    
+
 }
 
-.header-list{
+.header-list {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 20px;
     margin-top: 30px;
-    
+
 }
 
 .header-list li .link-item {
     text-decoration: none;
     color: white;
     border-width: 2px 2px;
-    border-style: solid; 
+    border-style: solid;
     border-color: #fcc803;
-   
     padding: 7px;
 }
 
@@ -77,49 +75,51 @@ nav {
 } */
 
 
-
 .services {
-    /* background-color: rgb(198, 216, 180); */
     width: 33%;
     color: white;
     position: relative;
 }
-.services input{
+
+.services input {
     position: absolute;
     background-color: #f8e8ad;
     height: 28px;
-    margin-top: 28px ;
+    margin-top: 28px;
 
 }
-.icons{
+
+.icons {
     position: absolute;
-    /* color: #fcc803; */
     font-size: 26px;
-    margin-top: 28px ;
+    margin-top: 28px;
     right: 95px;
 }
-.fa-user{
+
+.fa-user {
     margin: 0px 15px;
 }
 
-.count{
+.count {
     position: absolute;
-    background-color:  #fcc803;
+    background-color: #fcc803;
     color: black;
     right: 80px;
     top: 45px;
     width: 15px;
     height: 20px;
     text-align: center;
-    font-size:18px;
-    border-radius:50% ;
+    font-size: 18px;
+    border-radius: 50%;
 }
-.services h3{
+
+.services h3 {
     position: absolute;
     right: 0px;
-    top:40px ;
+    top: 40px;
     color: white;
 }
+
 .header-list {
     list-style: none;
 
@@ -128,13 +128,9 @@ nav {
 .dropdown-menu {
     background-color: rgb(255, 255, 255);
 
-
-
 }
 
-
 /* ---------------------------------main-section------------------------------------------ */
-
 
 .parent {
     width: 100%;
@@ -144,9 +140,7 @@ nav {
     background-size: cover;
     position: relative;
 
-
 }
-
 
 .overlay {
     position: absolute;
@@ -198,12 +192,12 @@ nav {
 
 .btn:hover {
     opacity: 0.6;
-
 }
 
 /* ---------------------------------Special categorySection_1------------------------------------------ */
-.sec1{
-background-color: rgb(226, 221, 221);
+
+.sec1 {
+    background-color: rgb(226, 221, 221);
 }
 
 .special-title {
@@ -220,7 +214,6 @@ background-color: rgb(226, 221, 221);
     width: 80%;
     min-height: 350px;
     margin: 20px auto;
-    /* background-color: rgb(128, 111, 111); */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -230,87 +223,65 @@ background-color: rgb(226, 221, 221);
 .special-item {
     width: 24%;
     min-height: 200px;
-    /* background-color: rgb(226, 216, 204); */
-
 
 }
 
-.special-item img{
-width: 100%;
-height: 250px;
+.special-item img {
+    width: 100%;
+    height: 250px;
 }
 
-.special-info{
+.special-info {
     position: relative;
     line-height: 30px;
-    padding-top: 20px ;
-    
-    
+    padding-top: 20px;
+
+
 }
 
-.special-info h2{
+.special-info h2 {
     font-size: 20px;
 }
 
-.fa-chevron-right::before{
+.fa-chevron-right::before {
     position: absolute;
     visibility: hidden;
     right: 0;
     bottom: 30px;
-    
+
     transition: 0.2s;
     font-size: 22px;
     background-color: #fcc803;
     padding: 5px 10px;
     transition: 0.1s;
-    
+
 }
 
-.special-item:hover .fa-chevron-right::before{
+.special-item:hover .fa-chevron-right::before {
     visibility: visible;
-    
+
 }
-
-
 
 /* ---------------------------------Section_4------------------------------------------ */
-
-
-.sec4 {
-    /* background-color: blue; */
-    height: 100vh;
-}
 
 .sec4_container {
     width: 80%;
     min-height: 500px;
-
-    /* height: 500px; */
-    /* display: flex; */
     overflow: auto;
     margin: auto;
-    /* background-color: aqua; */
 }
 
 .sec4_ovelay1 {
     min-height: 330px;
-    /* background-color: rgb(11, 236, 11); */
     display: flex;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
     flex-flow: row wrap;
     margin-top: 20px;
-    /* position: relative; */
-}
-
-.sec4_ovelay2 {
-    /* background-color: brown; */
 }
 
 .sec4_prag {
-    /* background-color: blueviolet; */
+    background-color: rgb(247, 247, 247);
     width: 48%;
-    min-height: 300px;
+    height: 300px;
     padding-left: 50px;
     padding-right: 20px;
     position: relative;
@@ -320,24 +291,55 @@ height: 250px;
 .fa-check-circle::before {
     position: absolute;
     left: 15px;
-    top: 18px;
+    top: 20px;
     font-size: 28px;
-    color: #fcc803;
+    color: #be9500;
+
+}
+
+.sec4_prag .pragraph {
+    padding-top: 15px;
+    padding-right: 0px;
+    line-height: 25px;
+}
+
+.bullets {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+
+.bullets span {
+    background-color: #be9500;
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    margin-right: 10px;
 
 }
 
 .discount-item {
-
     width: 23%;
     height: 300px;
     margin-left: 2%;
-    margin-top: 15px;
-    background-image: url(../img/12.jpeg);
-    background-size: cover;
-
     position: relative;
 
+}
 
+.overlay-discount {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(223, 211, 211, 0.151);
+}
+
+
+.cover-img {
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -347,8 +349,13 @@ height: 250px;
 
 .discount-item-info {
     position: absolute;
+    color: rgb(27, 27, 27);
     top: 20px;
     left: 15px;
+}
+
+.sec4_ovelay2 {
+    /* background-color: brown; */
 }
 
 /* ---------------------------------Section_5------------------------------------------ */
@@ -377,7 +384,6 @@ height: 250px;
 }
 
 .products_container {
-    /* background-color: rgb(192, 130, 130); */
     width: 80%;
     margin: auto;
 }
@@ -402,12 +408,7 @@ height: 250px;
     grid-auto-rows: minmax(400px, auto);
     grid-column-gap: 22px;
     grid-row-gap: 22px;
-
-
-
 }
-
-.product-item {}
 
 .product-img {
     background-color: rgb(225, 231, 231);
@@ -462,7 +463,7 @@ height: 250px;
 }
 
 .stars-list {
-    color:#fcc803;
+    color: #fcc803;
 }
 
 .stars-list .far {
