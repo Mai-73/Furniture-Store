@@ -4,30 +4,10 @@
     box-sizing: border-box;
 }
 
-/* .header-list li .link-item::after{
-    position: absolute;
-    content: "";
-    border-width: 0 2px;
-    border-style: solid; 
-    border-color: black;
-    height: 100%;
-    width: 0;
-
-    top: 0;
-    left: 0;
-    bottom: 0;
-    transition: 3s;
-} */
-
-/* .header-list li .link-item:hover:after{
-    height: 100%;
-    width: 100%;
-} */
 
 header {
     width: 100%;
     height: 90px;
-    /* height: 400px; */
     background-color: rgba(43, 43, 43, 0.9);
 
 }
@@ -35,7 +15,6 @@ header {
 .header-container {
     width: 90%;
     margin: auto;
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -70,7 +49,6 @@ nav {
 .header-list li .link-item {
     text-decoration: none;
     position: relative;
-    /* background-color: blueviolet; */
     color: white;
     border-width: 2px 2px;
     border-style: solid;
@@ -91,13 +69,13 @@ nav {
 
 }
 
-.dropdown:hover .dropdown-menu{ 
+.dropdown:hover .dropdown-menu {
     visibility: visible;
-    
+
 }
 
 .dropdown-menu ul {
-    background-color: rgba(43, 43, 43, 0.9);
+    background-color: rgba(43, 43, 43, 0.6);
     display: table-cell;
     min-width: 100px;
     padding-top: 10px;
@@ -173,7 +151,7 @@ nav {
 .parent {
     width: 100%;
     height: 100vh;
-    background-image: url(../img/home.jpg);
+    background-image: url(../img/black-yellow-chair-next-desk-.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -184,7 +162,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(36, 8, 8, 0.35);
+    background-color: rgba(24, 24, 24, 0.35);
     top: 0;
     left: 0;
 
@@ -193,8 +171,10 @@ nav {
 .content {
     width: 50%;
     position: absolute;
-    top: 30%;
-    left: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .title1 {
@@ -220,14 +200,10 @@ nav {
     padding: 10px;
 }
 
-.btn1 {
-    margin-left: 25%;
-}
-
 .btn2 {
-    background-color: rgba(43, 43, 43, 0.9);
+    background-color: hsla(47, 98%, 50%, 0.856);
     color: rgb(255, 255, 255);
-
+    margin-left: 10px;
 }
 
 .btn:hover {
@@ -275,8 +251,6 @@ nav {
     position: relative;
     line-height: 30px;
     padding-top: 20px;
-
-
 }
 
 .special-info h2 {
@@ -308,7 +282,6 @@ nav {
     overflow: auto;
     margin: auto;
     border-bottom: 1px solid rgb(128, 124, 124);
-    ;
 }
 
 .sec4_ovelay1 {
@@ -380,7 +353,6 @@ nav {
 .cover-img {
     width: 100%;
     height: 100%;
-
 }
 
 .discount-item:hover {
@@ -397,11 +369,7 @@ nav {
 .sprites {
     width: 100%;
     margin-top: 30px;
-    /* background-color: brown; */
     display: flex;
-    /* flex-direction: row; */
-
-
 }
 
 .sprite-item {
@@ -501,8 +469,6 @@ nav {
     display: flex;
     justify-content: center;
     list-style: none;
-
-
 }
 
 .products-list li {
@@ -533,13 +499,11 @@ nav {
     opacity: 0.9;
     transition: 0.2s;
     transform: scalex(0);
-
 }
 
 .product-item:hover .product-overlay {
     visibility: visible;
     transform: scalex(1);
-
 }
 
 .product-item:hover .pro-img {
@@ -554,7 +518,6 @@ nav {
 }
 
 .product-overlay i {
-
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -563,7 +526,6 @@ nav {
     font-size: 22px;
     text-align: center;
     padding-top: 10px;
-
 }
 
 .product-info {
