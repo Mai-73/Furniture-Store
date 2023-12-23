@@ -4,9 +4,30 @@
     box-sizing: border-box;
 }
 
+/* .header-list li .link-item::after{
+    position: absolute;
+    content: "";
+    border-width: 0 2px;
+    border-style: solid; 
+    border-color: black;
+    height: 100%;
+    width: 0;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 3s;
+} */
+
+/* .header-list li .link-item:hover:after{
+    height: 100%;
+    width: 100%;
+} */
+
 header {
     width: 100%;
     height: 90px;
+    /* height: 400px; */
     background-color: rgba(43, 43, 43, 0.9);
 
 }
@@ -14,6 +35,7 @@ header {
 .header-container {
     width: 90%;
     margin: auto;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -47,33 +69,13 @@ nav {
 
 .header-list li .link-item {
     text-decoration: none;
+    /* background-color: blueviolet; */
     color: white;
     border-width: 2px 2px;
     border-style: solid;
     border-color: #fcc803;
     padding: 7px;
 }
-
-/* .header-list li .link-item::after{
-    position: absolute;
-    content: "";
-    border-width: 0 2px;
-    border-style: solid; 
-    border-color: black;
-    height: 100%;
-    width: 0;
-
-    top: 0;
-    left: 0;
-    bottom: 0;
-    transition: 3s;
-} */
-
-/* .header-list li .link-item:hover:after{
-    height: 100%;
-    width: 100%;
-} */
-
 
 .services {
     width: 33%;
@@ -125,10 +127,45 @@ nav {
 
 }
 
-.dropdown-menu {
-    background-color: rgb(255, 255, 255);
+.dropdown-menu{
+    position: absolute;
+    border: 2px solid #fcc803;
+    margin-top: 15px;
+    visibility: hidden;
+    transition: 0.2s;
+    z-index: 5;
+    
+}
+
+.header-list li .link-item:hover .dropdown-menu{ 
+    visibility: visible;
+}
+
+.dropdown-menu ul {
+    background-color: rgba(43, 43, 43, 0.9);
+    display: table-cell;
+    min-width: 100px;
+    padding-top: 10px;
+}
+
+.dropdown-menu ul li{
+    line-height: 1.7;
+    margin: 0 30px;  
+}
+
+.dropdown-menu ul li:first-child a{
+    border-bottom: 1px dotted #fcc803;
+    margin-bottom: 10px;
 
 }
+
+.dropdown-menu ul li a{
+    display: inline-block;
+    color: #fcc803;
+    text-decoration: none;
+}
+
+
 
 /* ---------------------------------main-section------------------------------------------ */
 
@@ -155,15 +192,13 @@ nav {
 .content {
     width: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    top: 30%;
+    left: 5%;
 }
 
 .title1 {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
 }
 
@@ -172,7 +207,8 @@ nav {
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     letter-spacing: 2px;
-    margin: 10px 0px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .btn {
@@ -180,12 +216,15 @@ nav {
     border: none;
     font-size: 20px;
     text-transform: capitalize;
-    margin-right: 10px;
-    padding: 15px;
+    padding: 10px;
+}
+
+.btn1 {
+    margin-left: 25%;
 }
 
 .btn2 {
-    background-color: blue;
+    background-color: rgba(43, 43, 43, 0.9);
     color: rgb(255, 255, 255);
 
 }
@@ -248,8 +287,6 @@ nav {
     visibility: hidden;
     right: 0;
     bottom: 30px;
-
-    transition: 0.2s;
     font-size: 22px;
     background-color: #fcc803;
     padding: 5px 10px;
