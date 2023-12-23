@@ -81,20 +81,20 @@ nav {
 
 .dropdown .dropdown-menu {
     position: absolute;
-
     border: 2px solid #fcc803;
-
-    margin-top: 15px;
+    margin-top: 20px;
     visibility: hidden;
-    /* transition: 0.2s; */
+    transition: 0.2s;
     z-index: 5;
+    top: 7%;
+    left: 20%;
 
 }
 
-/* .header-list li .link-item:hover .dropdown-menu{ 
+.dropdown:hover .dropdown-menu{ 
     visibility: visible;
     
-} */
+}
 
 .dropdown-menu ul {
     background-color: rgba(43, 43, 43, 0.9);
